@@ -1,10 +1,9 @@
 package com.lucascode;
 
 import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class Main {
+public class Course1 {
     public static void main(String[] args) {
         // write the code here.
         System.out.println("Hi Java, now its my time to dominate you!😊");
