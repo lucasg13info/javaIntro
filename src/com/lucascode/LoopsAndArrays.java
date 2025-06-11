@@ -32,6 +32,7 @@ public class LoopsAndArrays {
         //Read the array reverse
         for(int i = names.length -1; i>= 0; i--){
 
+
             System.out.println(names[i]);
 
         };
