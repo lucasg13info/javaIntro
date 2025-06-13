@@ -1,4 +1,4 @@
-package com.lucascode;
+package com.lucascode.loops;
 
 public class ForLoops {
     public static void main(String[] args) {

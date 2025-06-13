@@ -1,4 +1,4 @@
-package com.lucascode;
+package com.lucascode.loops;
 
 import java.util.Arrays;
 
