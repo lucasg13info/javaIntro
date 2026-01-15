@@ -39,5 +39,8 @@ public class SwitchStatement {
         };
 
         System.out.println(result);
+
+
+
     }
 }
