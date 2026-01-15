@@ -4,7 +4,24 @@ import java.util.Arrays;
 
 public class LoopsAndArrays {
     public static void main(String[] args) {
-    //Loops and Arrays
+        // Loops and Arrays
+        String[] names = {
+                "James",
+                "Nadia",
+                "Sophia,",
+                "Alex"
+        };
+
+        //Running arrray
+        for(int i = 0; i < names.length; i++){
+            System.out.println(names[i]);
+        }
+
+
+
+
+
+    /*//Loops and Arrays
         String[] names = {
                 "James",
                 "Nadia",
@@ -35,7 +52,7 @@ public class LoopsAndArrays {
 
             System.out.println(names[i]);
 
-        };
+        };*/
     }
     }
 
