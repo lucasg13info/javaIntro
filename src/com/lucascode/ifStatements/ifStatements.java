@@ -5,14 +5,16 @@ import java.sql.SQLOutput;
 public class ifStatements {
     public static void main(String[] args){
         //If Statements - execute block of code based on the condition
-        int age = 3;
+
+
+        int age = 16;
         boolean isAdult = age >= 16;
-//       Basic If
-//        if(isAdult){
-//            System.out.println("Is Adult ");
-//        }else{
-//            System.out.println("Is not an Adult ");
-//        }
+       //Basic If
+        if(isAdult){
+            System.out.println("Is Adult ");
+        }else{
+            System.out.println("Is not an Adult ");
+        }
 
 
 

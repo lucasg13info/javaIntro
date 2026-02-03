@@ -13,11 +13,11 @@ public class WhileLoopAndDoWhile {
 
         System.out.println("--------------------");
 
-        //Do While
+        //Do While - execute stat at least once
         boolean  keepLooping2 = true;
         do{
             System.out.println("Hello " +i++);
-//            keepLooping2 = false;
+            keepLooping2 = false;
 
         } while(keepLooping2);
 
