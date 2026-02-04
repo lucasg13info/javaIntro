@@ -7,7 +7,7 @@ public class NegationOnIfs {
 
         boolean isAdult = false;
         if(!isAdult){
-            System.out.println("Adult: ");
+            System.out.println("Adult ");
         }
     }
 }

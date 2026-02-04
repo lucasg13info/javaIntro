@@ -34,8 +34,7 @@ public class ifStatements {
 
 
         //If Statements OR
-        String gender = "Male";
-
+        String gender = "Female";
 
         if (gender.equalsIgnoreCase("FEMALE") || gender.equalsIgnoreCase("MALE")){
             System.out.println("Valid gender");

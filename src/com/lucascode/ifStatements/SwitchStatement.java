@@ -3,7 +3,7 @@ package com.lucascode.ifStatements;
 public class SwitchStatement {
     public static void main(String[] args){
         //Switch - used to improve the readability
-        char grade = 'B';
+        char grade = 'A';
 
         //Code with if
         if (grade == 'A'){
@@ -31,16 +31,32 @@ public class SwitchStatement {
                 System.out.println("Fail");
         }
 
+
+
+
+
+        //Basic Switch case:
+        int day = 4;
+        switch (day){
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            default:
+                System.out.println("Fail");
+        }
+
+
+        char grades = 'C';
         //New Switch Expression
-        String result = switch (grade){
+        String result = switch (grades){
             case 'A' -> "Excellent";
             case 'B', 'C' -> "Pass";
             default -> "Fail";
         };
 
         System.out.println(result);
-
-
-
     }
 }
