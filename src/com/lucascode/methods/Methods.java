@@ -17,6 +17,13 @@ Use to reuse code something you do many times in your code you can create as a m
     - Optional return value
 * */
 
+/*
+Methods convention: Methods should be verbs, in mixed case with the first letter lowercase, with the first letter of each internal workd capitalized.
+run();
+runFast();
+getBackground();
+* */
+
 
 public class Methods {
     //Method 1:
