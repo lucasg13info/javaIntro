@@ -19,7 +19,7 @@ public class methodRentalYield {
     }
 
     public static void main(String[] args){
-        double yield = rentalYield(1000, 250000);
+        double yield = rentalYield(1300, 250000);
 
     }
 }
