@@ -2,8 +2,7 @@ package com.lucascode.methods;
 
 /*
 Methods is a block of code that only runs when is envolt.
-Use to reuse code
- something you do many times in your code you can create as a method and dont repeat code.
+Use to reuse code something you do many times in your code you can create as a method and dont repeat code.
  */
 
 /*
@@ -13,13 +12,20 @@ Use to reuse code
     - Optional static
     - Return Type
     - Name
-    - Optional parameters
+    - Optional parameters (int n1, int n2) can be string, int, anything
     - Methodh Body
     - Optional return value
 * */
 
 
 public class Methods {
+    //Method 1:
+    private static int add(int n1, int n2){
+        int result = n1 +n2;
+        return result;
+    }
+
+
     public static void main(String[] args){
         //This is the mothod - public static void main(String[] args){
         /*
@@ -32,5 +38,11 @@ public class Methods {
         * Optional return: nothing at the moment because we are using void
         *
         * */
+
+        // Create a method that add 2 numbers
+        int result = add(10,10);
+        int result2 = add(10,200);
+        System.out.println(result);
+        System.out.println(result2);
     }
 }
