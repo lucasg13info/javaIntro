@@ -20,5 +20,14 @@ public class StringArgs {
         var names = new String[]{"Lucas", "Pedro"};
         var age = 22;
 
+
+        //Break
+        var numbers = new int[]{1, 2, 3, 4, 5};
+        for (int number : numbers){
+            if (number == 3){
+                break;
+            }
+            System.out.println(number);
+        }
     }
 }
