@@ -1,9 +1,8 @@
 package com.lucascode.BeyoundTheBasics;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class beyoundBasics {
+public class understandingPublicStaticVoidMain {
     public static void main(String[] args){
         //public: this method is public accessible
         //static: is no need to create an instance of the class, this method ca be involked directly by saying main dot
