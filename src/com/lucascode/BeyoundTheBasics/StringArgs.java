@@ -29,5 +29,19 @@ public class StringArgs {
             }
             System.out.println(number);
         }
+
+
+        var nomes = new String[]{
+                "Andre",
+                "Jamila",
+                "tonh"
+        };
+
+        for (String nome : nomes){
+            if (nome.startsWith("J")){
+                break;
+            }
+            System.out.println(nome);
+        }
     }
 }
