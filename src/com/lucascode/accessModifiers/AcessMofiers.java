@@ -19,6 +19,9 @@ public class AcessMofiers {
         // private: Accessible only anything in the same class.
         // Default: Accessible same class or same packages.
 
+        //Static: Always when you see "static" means that everything belongs to the class it self.
+        // 
+
 
         //When to use each one?
 
