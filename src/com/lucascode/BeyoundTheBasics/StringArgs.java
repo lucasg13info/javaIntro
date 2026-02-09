@@ -34,14 +34,18 @@ public class StringArgs {
         var nomes = new String[]{
                 "Andre",
                 "Jamila",
+                "Jamal",
+                "Jamalei",
                 "tonh"
         };
 
         for (String nome : nomes){
             if (nome.startsWith("J")){
-                break;
+                //continue;
+                return; //exit of the method all together - just print 1st loop
             }
             System.out.println(nome);
         }
+        System.out.println("End of the method");
     }
 }
