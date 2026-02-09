@@ -1,6 +1,10 @@
 package com.lucascode.BeyoundTheBasics;
 
 public class FinalKeyword {
+
+    //Good aproach to create constant:
+    public static final String  NAME = "Lucas";
+
     public static void main(String[] args){
         //Final Keyword: Allows to create constants
 
