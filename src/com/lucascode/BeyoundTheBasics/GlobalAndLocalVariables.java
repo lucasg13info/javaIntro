@@ -17,6 +17,10 @@ public class GlobalAndLocalVariables {
         //Local variable:
         String country = "England";
 
+        //How to create local variable
+        var BRAND = "ADIDAS";
+
+
         System.out.println(BRAND);
         foo();
     }
