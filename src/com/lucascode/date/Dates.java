@@ -44,5 +44,10 @@ public class Dates {
 
         LocalDateTime nowInBrazil = LocalDateTime.now(ZoneId.of("Brazil/DeNoronha"));
         System.out.println("Local time now in Brazil: " + nowInBrazil);
+
+
+        //Other way
+        System.out.println(Instant.now());
+        System.out.println();
     }
 }

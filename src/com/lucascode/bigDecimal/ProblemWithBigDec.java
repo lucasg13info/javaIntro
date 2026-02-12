@@ -1,0 +1,23 @@
+package com.lucascode.bigDecimal;
+
+import java.math.BigDecimal;
+
+public class ProblemWithBigDec {
+    public static void main(String[] args){
+
+        //TO stroe money never store with double but with Bigdecimal
+        double numer1 = 0.02;
+        double numer2 = 0.03;
+        double result = numer2 - numer1;
+        System.out.println(result); // 0.009999999999999998
+
+
+        //Correct way to store money:
+        BigDecimal numero1= new BigDecimal("0.02");
+        BigDecimal numero2= new BigDecimal("0.03");
+        BigDecimal resultado = numero2.subtract(numero1);
+        System.out.println(resultado);
+    }
+
+
+}
