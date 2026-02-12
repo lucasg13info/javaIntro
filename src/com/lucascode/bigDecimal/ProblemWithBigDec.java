@@ -17,6 +17,16 @@ public class ProblemWithBigDec {
         BigDecimal numero2= new BigDecimal("0.03");
         BigDecimal resultado = numero2.subtract(numero1);
         System.out.println(resultado);
+
+
+
+
+        //Big decimal
+        BigDecimal num = BigDecimal.TEN;
+        System.out.println(num);
+        System.out.println(num.add(BigDecimal.ONE));
+        System.out.println(num.max(BigDecimal.ZERO));
+        System.out.println(num.compareTo(BigDecimal.ZERO));
     }
 
 
