@@ -77,4 +77,11 @@ public class Cat {
     public void setColor(String color) {
         this.color = color;
     }
+
+    //Representive string,to print all
+    public String toString(){
+        return "Name: "+  name +
+                " Color: " + color +
+                " Age: " + age;
+    }
 }
