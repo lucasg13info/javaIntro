@@ -8,11 +8,15 @@ public class Classes {
         Cat rose = new Cat();
         rose.setName("Rose");
         rose.meow();
+        System.out.println(rose.getName());
+
 
 
         //This isnatance is called star
         Cat star = new Cat();
         star.setName("Star");
         star.meow();
+        System.out.println(star.getName());
+
     }
 }
