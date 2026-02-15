@@ -7,6 +7,7 @@ package com.lucascode.OOP;
     GETTER: method for get value
     SETTER: method to change the value
     CONSTRUCTOR: Allow you to pass values at the point of initialization for your object.
+    Word this. = used in constructors, setters, getters - this keyword refers to the current instance  of the current class
 
 * */
 
@@ -78,7 +79,7 @@ public class Cat {
         this.color = color;
     }
 
-    //Representive string,to print all
+    //Representive string,to print all methods
     public String toString(){
         return "Name: "+  name +
                 " Color: " + color +
