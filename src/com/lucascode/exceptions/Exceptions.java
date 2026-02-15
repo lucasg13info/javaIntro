@@ -1,6 +1,11 @@
 package com.lucascode.exceptions;
 
+import java.io.File;
+
 public class Exceptions {
+
+
+
     public static void main(String[] args) {
         //Exception - try catch - this make the program dont break.
         //We can have a few catch...
@@ -44,5 +49,31 @@ public class Exceptions {
             //Always execute regardless - always run
             System.out.println("Finnaly always runs");
         }
+
+        //Working with files
+        try {
+            File file = new File("src/foo.txt");
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println(divide(10, 0));
+
     }
+
+
+    //MyUncheckedException
+    public static int divide(int a, int b){
+        if (b == 0 ){
+            throw new MyUncheckedException("Cant divide by 0");
+        }
+        return a/b;
+    }
+
+
+
+
 }
