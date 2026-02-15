@@ -5,18 +5,19 @@ public class Classes {
         //Classes
 
         //Type     new class
-        Cat rose = new Cat();
-        rose.setName("Rose");
+        Cat rose = new Cat("Rose", 2);
         rose.meow();
         System.out.println(rose.getName());
+        System.out.println(rose.getAge());
 
 
 
-        //This isnatance is called star
-        Cat star = new Cat();
-        star.setName("Star");
-        star.meow();
-        System.out.println(star.getName());
+
+        //This instance is called star
+//        Cat star = new Cat();
+//        star.setName("Star");
+//        star.meow();
+//        System.out.println(star.getName());
 
     }
 }
