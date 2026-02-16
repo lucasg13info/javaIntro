@@ -9,6 +9,18 @@ package com.lucascode.OOP;
     CONSTRUCTOR: Allow you to pass values at the point of initialization for your object.
     Word this. = used in constructors, setters, getters - this keyword refers to the current instance  of the current class
     POJOS = stands for plain old Java object, this name is used to given object its an ordinary Java object, no assosiation with framewok - basic class, no extends, basic class
+    BEAN: is a class that has to obey three contracts so that other frameworks can do certain things with it.
+        JavaBean — Three Pillars
+
+        1- No-arguments constructor
+        The class must provide a public no-args constructor so frameworks can instantiate it using reflection.
+
+        2- Implements Serializable
+        The class must implement the Serializable interface to allow the object to be serialized for transport, caching, or persistence.
+
+        3- Encapsulation with public getters and setters
+        All properties must be private and accessed through public get and set methods following the Java naming conventions.
+
 * */
 
 
