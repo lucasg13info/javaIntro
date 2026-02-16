@@ -12,6 +12,8 @@ package com.lucascode.OOP;
 * */
 
 
+import java.util.Objects;
+
 //Classes are made by propertys and behaviors
 public class Cat {
     private String name; //property, never be public
@@ -88,9 +90,22 @@ public class Cat {
                 '}';
     }
 
-    //Override the idea of comparing objects.
+//    //Override the idea of comparing objects.
+//    @Override
+//    public boolean equals (Object obj){
+//        return true;
+//    }
+
+
     @Override
-    public boolean equals (Object obj){
-        return true;
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age && Objects.equals(name, cat.name) && Objects.equals(color, cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age, color);
     }
 }
