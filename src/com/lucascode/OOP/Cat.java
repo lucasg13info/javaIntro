@@ -8,7 +8,7 @@ package com.lucascode.OOP;
     SETTER: method to change the value
     CONSTRUCTOR: Allow you to pass values at the point of initialization for your object.
     Word this. = used in constructors, setters, getters - this keyword refers to the current instance  of the current class
-
+    POJOS = stands for plain old Java object, this name is used to given object its an ordinary Java object, no assosiation with framewok - basic class, no extends, basic class
 * */
 
 
