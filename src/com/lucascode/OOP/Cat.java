@@ -79,10 +79,12 @@ public class Cat {
         this.color = color;
     }
 
-    //Representive string,to print all methods
-    public String toString(){
-        return "Name: "+  name +
-                " Color: " + color +
-                " Age: " + age;
+    @Override //This is only for readability if we delete this doenst change the code. this is good for documenting the code. we are changing the normal notation toString, define our implementation.
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
