@@ -1,6 +1,8 @@
 package com.lucascode.OOP;
 
 /*
+
+OOP: Object Oriented Programming language!
 - Class can be everything:
     Classes are made by propertys and behaviors
 
