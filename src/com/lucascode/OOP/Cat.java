@@ -87,4 +87,10 @@ public class Cat {
                 ", color='" + color + '\'' +
                 '}';
     }
+
+    //Override the idea of comparing objects.
+    @Override
+    public boolean equals (Object obj){
+        return true;
+    }
 }

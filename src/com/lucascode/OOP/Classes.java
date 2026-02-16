@@ -15,19 +15,30 @@ public class Classes {
         System.out.println(rose);
 
 
+        System.out.println("------------");
+        Cat rose2 = new Cat("Rose", 2, "Blue");
+        System.out.println(rose2);
+
+
+        //Compare Objects
+        System.out.println(rose == rose2); //Wrong way
+        System.out.println(rose.equals(rose2));
+
         System.out.println("-----------");
         //This instance is called star
         //Cat 2
         Cat star = new Cat(); // constructor with 0 arguments.
-        star.setName("Star");
-        star.meow();
-        System.out.println(star.getName());
+//        star.setName("Star");
+//        star.meow();
+//        System.out.println(star.getName());
+        System.out.println(star);
 
         System.out.println("-----------");
         //Cat 3
         Cat jupiter = new Cat("jupiter"); // constructor with 0 arguments.
-        System.out.println(jupiter.getName());
-        System.out.println(jupiter.getAge());
+//        System.out.println(jupiter.getName());
+//        System.out.println(jupiter.getAge());
+        System.out.println(jupiter);
 
 
     }
