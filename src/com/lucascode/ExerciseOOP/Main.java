@@ -35,11 +35,11 @@ public class Main {
         };
         //System.out.println(work);
 
-        Pet pig = new Pet("PIG", "Lulu", 2){
+        Pet pig = new Pet(PetType.PIG, "Lulu", 2){
         };
 
 
-        Pet dog = new Pet("Dog", "Lui", 3){
+        Pet dog = new Pet(PetType.CANARY, "Lui", 3){
         };
 
         Pet[] pets = {pig, dog};

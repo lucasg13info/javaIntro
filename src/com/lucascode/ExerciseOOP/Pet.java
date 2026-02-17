@@ -3,23 +3,23 @@ package com.lucascode.ExerciseOOP;
 import java.util.Objects;
 
 public class Pet {
-    private String petType;
+    private PetType petType;
     private String name;
     private Integer age;
 
 
 
-    public Pet(String petType, String name, Integer age) {
+    public Pet(PetType petType, String name, Integer age) {
         this.petType = petType;
         this.name = name;
         this.age = age;
     }
 
-    public String getPetType() {
+    public PetType getPetType() {
         return petType;
     }
 
-    public void setPetType(String petType) {
+    public void setPetType(PetType petType) {
         this.petType = petType;
     }
 
