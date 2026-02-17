@@ -11,10 +11,10 @@ public class Car {
     private Color Color;
     private Integer year;
 
-    public Car(String model, String branch, double price, Integer regoNum, Color color, Integer year) {
+    public Car(String model, String branch, BigDecimal price, Integer regoNum, Color color, Integer year) {
         this.model = model;
         this.branch = branch;
-        //this.price = price;
+        this.price = price;
         this.regoNum = regoNum;
         Color = color;
         this.year = year;

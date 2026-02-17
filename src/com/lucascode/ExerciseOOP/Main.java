@@ -2,6 +2,8 @@ package com.lucascode.ExerciseOOP;
 
 import com.lucascode.OOP.Cat;
 import com.lucascode.OOP.Gender;
+
+import java.math.BigDecimal;
 import java.util.Arrays;
 
 
@@ -11,7 +13,7 @@ public class Main {
         Car tesla = new Car(
                 "Tesla Model 3",
                 "Tesla",
-                59000.00,
+                new BigDecimal("59000.00"),
                 2121121,
                 com.lucascode.ExerciseOOP.Color.WHITE,
                 2026) {
@@ -20,7 +22,7 @@ public class Main {
         Car gol = new Car(
                 "gol",
                 "Volkswagen",
-                59000.00,
+                new BigDecimal("59000.00"),
                 2121121,
                 com.lucascode.ExerciseOOP.Color.WHITE,
                 2026) {
