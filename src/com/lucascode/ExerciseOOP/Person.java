@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Person {
+
     private String firstName;
     private String lastName;
     private Gender gender;
@@ -13,13 +14,15 @@ public class Person {
     private String email;
     private String address;
     private Car [] cars;
-    //private Work [] work;
-    //private Dog [] dogs;
+    private Work [] work;
+    private Pet [] pet;
 
     //Constructors:
 
 
-    public Person(String firstName, String lastName, Gender gender, Integer passport, String email, String address, Car[] cars) {
+
+
+    public Person(String firstName, String lastName, Gender gender, Integer passport, String email, String address, Car[] cars, Work work, Pet[] pet) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -27,9 +30,13 @@ public class Person {
         this.email = email;
         this.address = address;
         this.cars = cars;
+        this.work = new Work[]{work};
+        this.pet = pet;
     }
 
-    //Getters and Setters:
+    //Getters and Setters
+
+
     public String getFirstName() {
         return firstName;
     }
@@ -86,7 +93,22 @@ public class Person {
         this.cars = cars;
     }
 
-    //String
+    public Work[] getWork() {
+        return work;
+    }
+
+    public void setWork(Work[] work) {
+        this.work = work;
+    }
+
+    public Pet[] getPet() {
+        return pet;
+    }
+
+    public void setPet(Pet[] pet) {
+        this.pet = pet;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
@@ -97,19 +119,20 @@ public class Person {
                 ", email='" + email + '\'' +
                 ", address='" + address + '\'' +
                 ", cars=" + Arrays.toString(cars) +
+                ", work=" + Arrays.toString(work) +
+                ", pet=" + Arrays.toString(pet) +
                 '}';
     }
 
-    // Equals
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && gender == person.gender && Objects.equals(passport, person.passport) && Objects.equals(email, person.email) && Objects.equals(address, person.address) && Objects.deepEquals(cars, person.cars);
+        return Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && gender == person.gender && Objects.equals(passport, person.passport) && Objects.equals(email, person.email) && Objects.equals(address, person.address) && Objects.deepEquals(cars, person.cars) && Objects.deepEquals(work, person.work) && Objects.deepEquals(pet, person.pet);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, lastName, gender, passport, email, address, Arrays.hashCode(cars));
+        return Objects.hash(firstName, lastName, gender, passport, email, address, Arrays.hashCode(cars), Arrays.hashCode(work), Arrays.hashCode(pet));
     }
 }

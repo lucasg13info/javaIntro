@@ -1,8 +1,9 @@
 package com.lucascode.ExerciseOOP;
 
+import com.lucascode.OOP.Cat;
 import com.lucascode.OOP.Gender;
+import java.util.Arrays;
 
-import java.math.BigDecimal;
 
 public class Main {
     public static void main (String[] args) {
@@ -16,11 +17,33 @@ public class Main {
                 2026) {
         };
 
-        System.out.println(tesla);
+        Car gol = new Car(
+                "gol",
+                "Volkswagen",
+                59000.00,
+                2121121,
+                com.lucascode.ExerciseOOP.Color.WHITE,
+                2026) {
+        };
 
-        Car[] cars = {tesla };
-        System.out.println(cars);
+        //System.out.println(tesla);
 
+        Car[] cars = {tesla, gol };
+        //System.out.println(Arrays.toString(cars));
+
+        Work work = new Work("Software Engineer", 100.000, Stack.BACKEND){
+        };
+        //System.out.println(work);
+
+        Pet pig = new Pet("PIG", "Lulu", 2){
+        };
+
+
+        Pet dog = new Pet("Dog", "Lui", 3){
+        };
+
+        Pet[] pets = {pig, dog};
+        //System.out.println(Arrays.toString(pets));
 
 
         Person lucas = new Person(
@@ -30,20 +53,14 @@ public class Main {
                 121212121,
                 "lucas@lucas.com",
                 "Atkin Street",
-                cars){
+                cars,
+                work,
+                pets) {
 
         };
 
-
-        System.out.println("-------------------");
+        System.out.println("----------------------------------------");
         System.out.println(lucas);
 
-
-
-
-
-
     };
-
-
 }
