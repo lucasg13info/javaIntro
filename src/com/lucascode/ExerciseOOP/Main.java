@@ -1,5 +1,8 @@
 package com.lucascode.ExerciseOOP;
 
+
+//Static import
+import static java.lang.Math.max;
 import com.lucascode.OOP.Cat;
 import com.lucascode.OOP.Gender;
 
@@ -24,6 +27,13 @@ public class Main {
                 com.lucascode.ExerciseOOP.Color.WHITE,
                 2026) {
         };
+
+
+
+        //Static import of Math
+        System.out.println(max(10, 20));
+        System.out.println(Math.min(10,5));
+
 
         Car gol = new Car(
                 "gol",
