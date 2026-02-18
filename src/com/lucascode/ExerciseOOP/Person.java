@@ -10,12 +10,21 @@ public class Person {
     public static int count = 0;
 
     //Executed by JVM when the class is involt, here could be the Database conection
+    //Executed as soon the class is involct
     static {
         System.out.println("Start: Static initialization ");
         count = 0;
         System.out.println("Start: Static initialization ");
 
     }
+
+    //Execute pice of code - instance initializer
+    //This pice of code it will be executed/ involct once per instance
+    {
+
+    }
+
+
     private String firstName;
     private String lastName;
     private Gender gender;
