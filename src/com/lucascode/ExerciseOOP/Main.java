@@ -63,6 +63,7 @@ public class Main {
 
         System.out.println("----------------------------------------");
         System.out.println(lucas);
+        System.out.println(Person.count);
 
     };
 }

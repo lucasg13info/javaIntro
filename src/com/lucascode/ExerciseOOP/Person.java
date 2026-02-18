@@ -7,6 +7,15 @@ import java.util.Objects;
 
 public class Person {
 
+    public static int count = 0;
+
+    //Executed by JVM when the class is involt, here could be the Database conection
+    static {
+        System.out.println("Start: Static initialization ");
+        count = 0;
+        System.out.println("Start: Static initialization ");
+
+    }
     private String firstName;
     private String lastName;
     private Gender gender;
@@ -17,12 +26,15 @@ public class Person {
     private Work [] work;
     private Pet [] pet;
 
+
+
     //Constructors:
 
 
 
 
     public Person(String firstName, String lastName, Gender gender, Integer passport, String email, String address, Car[] cars, Work work, Pet[] pet) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -32,6 +44,7 @@ public class Person {
         this.cars = cars;
         this.work = new Work[]{work};
         this.pet = pet;
+        count ++;
     }
 
     //Getters and Setters
