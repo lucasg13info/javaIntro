@@ -8,7 +8,13 @@ import java.util.Arrays;
 
 
 public class Main {
+    static{
+        System.out.println("Static incializer in main");
+        System.out.println("Static incializer in main");
+    }
     public static void main (String[] args) {
+
+
 
         Car tesla = new Car(
                 "Tesla Model 3",
